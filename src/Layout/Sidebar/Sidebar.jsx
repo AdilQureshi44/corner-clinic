@@ -4,13 +4,13 @@ import {
     IconDashboard, IconFile, IconChartBar,
 } from "@tabler/icons-react";
 
-const Sidebar = () => {
+const Sidebar = ({isSidebarOpen}) => {
     const listItem = [
         {name: "Dashboard", icon: <IconDashboard/>},
         {name: "Pages", icon: <IconFile/>}, {
         name: "Charts", icon: <IconChartBar/>},
     ];
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
     return <>
         <div className="sidebar">
             <div className="logo">
@@ -21,8 +21,8 @@ const Sidebar = () => {
                     key={index}
                     className={`item-list ${activeIndex === index ? "active" : ""}`}
                     onClick={() => setActiveIndex(index)}>
-                    <div>{item.icon}</div>
-                    {item.name}
+                    <div className="sidebar-icon">{item.icon}</div>
+                   <div className="sidebar-icon-name">{item.name}</div>
                 </div>))}
             </div>
         </div>

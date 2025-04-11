@@ -34,12 +34,18 @@
     line-height: 26px;
     display: flex;
     gap: 12px;
+    align-items: center;
     font-size: 14px;
     cursor: pointer;
     margin-bottom: 12px;
     padding: 8px;
     border-radius: 8px;
     font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.sidebar-icon {
+    display: flex;
+    align-items: center;
 }
 
 .item-list:hover {
