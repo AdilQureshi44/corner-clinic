@@ -4,7 +4,7 @@ import {
     IconDashboard, IconFile, IconChartBar,
 } from "@tabler/icons-react";
 
-const Sidebar = ({isSidebarOpen}) => {
+const Sidebar = () => {
     const listItem = [
         {name: "Dashboard", icon: <IconDashboard/>},
         {name: "Pages", icon: <IconFile/>}, {
