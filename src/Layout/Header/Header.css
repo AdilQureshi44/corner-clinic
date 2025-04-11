@@ -8,7 +8,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px 0 24px;
+    padding: 0 24px;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+
+.header-container.full-width {
+    width: calc(100% - 80px);
 }
 
 .hamburger {
@@ -17,14 +23,16 @@
 .hamburger:hover {
     color: var(--primary-color);
 }
-.user-settings{
+
+.user-settings {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
 }
-.user-settings img{
+
+.user-settings img {
     width: 100%;
     height: 100%;
 }

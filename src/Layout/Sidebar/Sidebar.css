@@ -15,7 +15,7 @@
     flex: 1 0 auto;
     outline: 0;
     border-right: 1px solid rgb(229, 234, 239);
-    transition: width 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.5s ease;
 }
 
 .logo {
@@ -55,4 +55,17 @@
 .item-list.active {
     background-color: rgb(93, 135, 255); /* Your preferred active color */
     color: white;
+}
+.collapsed{
+    width: 80px;
+    overflow: hidden;
+    border-right: 1px solid rgb(229, 234, 239);
+}
+.sidebar-icon-name-two{
+    display: none;
+}
+.sidebar-item-two {
+    padding: 0 24px 0 24px;
+    margin-top: 22px;
+    width: max-content;
 }
