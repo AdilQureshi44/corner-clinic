@@ -14,12 +14,13 @@
 }
 
 .header-container.full-width {
-    width: calc(100% - 80px);
+    width: calc(100% - 90px);
 }
 
 .hamburger {
     cursor: pointer;
 }
+
 .hamburger:hover {
     color: var(--primary-color);
 }

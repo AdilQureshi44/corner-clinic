@@ -56,16 +56,20 @@
     background-color: rgb(93, 135, 255); /* Your preferred active color */
     color: white;
 }
-.collapsed{
-    width: 80px;
+
+.collapsed {
+    width: 90px;
     overflow: hidden;
     border-right: 1px solid rgb(229, 234, 239);
+    transition: all 0.5s ease;
 }
-.sidebar-icon-name-two{
+
+.sidebar-icon-name-two {
     display: none;
 }
+
 .sidebar-item-two {
-    padding: 0 24px 0 24px;
-    margin-top: 22px;
+    padding: 0 20px 0 20px;
+    margin: 22px auto;
     width: max-content;
 }
