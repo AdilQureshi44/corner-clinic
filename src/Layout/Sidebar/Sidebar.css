@@ -1,8 +1,6 @@
 .sidebar {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     color: rgb(42, 53, 71);
-    background-image: none;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -13,26 +11,51 @@
     width: 270px;
     box-sizing: border-box;
     flex: 1 0 auto;
-    outline: 0;
-    border-right: 1px solid rgb(229, 234, 239);
-    transition: width 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-right: var(--border);
+    overflow-y: auto;
+    transition: width 0.4s ease;
+}
+
+.sidebar.collapsed {
+    width: 90px;
+    overflow: hidden;
 }
 
 .logo {
-    text-align: start;
-    padding: 12px 24px 12px 24px;
-    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 28px;
+    font-size: 20px;
     font-weight: bold;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    width: 28px;
+    height: 28px;
+    color: rgb(93, 135, 255);
+}
+
+.logo-text {
+    transition: opacity 1s ease, visibility 0.3s ease;
+}
+
+.sidebar.collapsed .logo-text {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .sidebar-item {
-    padding: 0 24px 0 24px;
+    padding: 0 24px;
     margin-top: 22px;
+    transition: padding 0.3s ease;
 }
 
 .item-list {
-    line-height: 26px;
     display: flex;
+    align-items: center;
     gap: 12px;
     font-size: 14px;
     cursor: pointer;
@@ -40,6 +63,8 @@
     padding: 8px;
     border-radius: 8px;
     font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 26px;
+    transition: background-color 0.3s ease;
 }
 
 .item-list:hover {
@@ -47,6 +72,25 @@
 }
 
 .item-list.active {
-    background-color: rgb(93, 135, 255); /* Your preferred active color */
+    background-color: rgb(93, 135, 255);
     color: white;
+}
+
+.sidebar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+}
+
+.sidebar-icon-name {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+}
+
+.sidebar.collapsed .sidebar-icon-name {
+    opacity: 0;
+    visibility: hidden;
 }
