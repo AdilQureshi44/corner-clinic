@@ -1,12 +1,11 @@
 .input-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 16px auto; /* Top: 0, Bottom: 16px, Left/Right: auto */
+    margin: 0 auto 16px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: fit-content;
 }
 
-/* Label Style */
 .input-wrapper label {
     margin-bottom: 6px;
     font-weight: 600;
@@ -14,7 +13,6 @@
     font-size: 14px;
 }
 
-/* Input Field Style */
 .input {
     padding: 12px 16px;
     border: 1px solid #d0d7de;
@@ -25,19 +23,16 @@
     color: #2a3547;
 }
 
-/* Focus Effect */
 .input:focus {
     border-color: #5d87ff;
     outline: none;
     box-shadow: 0 0 0 3px rgba(93, 135, 255, 0.2);
 }
 
-/* Error State */
 .input.error {
     border-color: red;
 }
 
-/* Error Text */
 .error-text {
     color: red;
     font-size: 12px;
